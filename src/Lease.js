@@ -28,18 +28,22 @@ export default function Lease() {
     }
      const [selectedCar, setSelectedCar] = React.useState({
         purchase: false,
+        car: null,
+        // startDate:null,
+        // endDate:null
     })
     function onSelectACar(car) {
         console.log(car);
-      const purchase=car
-
-        setSelectedCar({...selectedCar,[purchase]:true})
-      debugger
-       const g= selectedCar.purchase !== false? true:<Payment car={car} />
-        
-            
-   
+    
+        setSelectedCar({...selectedCar,purchase:true,car:car})
+      
     }
+    function submit() {
+
+    //   setSelectedCar({...selectedCar,startDate:startDate,endDate:endDate})
+    }
+ if(selectedCar.purchase===true) 
+       return <Payment car={selectedCar.car} submit={submit}/>
 
     return <div className='leasePage'>
         <div className="formDiv">

@@ -21,7 +21,7 @@ export default function CarAvelobol(props) {
                     <h6>{car.year}</h6>
                 </div>
                 <button className="linkToRent" onClick={() => { props.onSelectACar(car) }} > בצע רכישה{car.price}ש"ח</button>
-                <Link onClick={() => { props.onSelectACar(car) }} to='/Payment' className='linkToRent'> ש"ח{car.price}בצע רכישה</Link>
+                {/* <Link onClick={() => { props.onSelectACar(car) }} to='/Payment' className='linkToRent'> ש"ח{car.price}בצע רכישה</Link> */}
             </div>
             if (!props.filters.size0 && !props.filters.size1 && !props.filters.size2 &&
                 !props.filters.manual && !props.filters.auto) {

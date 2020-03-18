@@ -1,7 +1,7 @@
 body{
   margin: auto;
   direction: rtl;
-  background-color: cadetblue;
+  background-color: gold;
 }
 
 header{
@@ -99,6 +99,17 @@ label{
   margin: 5px;
   border-radius: 4%;
   border: solid black 4px;
+}
+.theChosenCar{
+  display: flex;
+  background-color: white;
+  width: 560px;
+  height: 180px;
+  margin: 5px;
+  border-radius: 4%;
+  border: solid black 4px;
+  position: fixed;
+
 }
 .leasePage{
   display: flex;

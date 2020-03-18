@@ -1,0 +1,112 @@
+[
+    {
+        "number": 546445,
+        "maker": "Toyota",
+        "name": "Corolla",
+        "image": "https://www.auto1.co.il/carmodelbank/2014-corola1.jpg",
+        "size": 2,
+        "gear": "auto",
+        "year": "2019",
+        "price": 300.90,
+        "kms": "30,000"
+    },
+    {
+        "number": 385612,
+        "maker": "Honda",
+        "name": "HR-V",
+        "image": "https://www.auto1.co.il/carmodelbank/2017_HR_V_25.jpg",
+        "size": 2,
+        "gear": "auto",
+        "year": "2014",
+        "price": 240.90,
+        "kms": "70,500"
+    },
+    {
+        "number": 737735,
+        "maker": "Nissan",
+        "name": "GT-R",
+        "image": "https://www.auto1.co.il/carmodelbank/gtr1%20(Copy).jpg",
+        "size": 2,
+        "gear": "manual",
+        "year": "2015",
+        "price": 339.10,
+        "kms": "60,100"
+    },
+    {
+        "number": 654544,
+        "maker": "Audi",
+        "name": "A1",
+        "image": "https://www.auto1.co.il/carmodelbank/a11.jpg",
+        "size": 1,
+        "gear": "manual",
+        "year": "2017",
+        "price": 328.60,
+        "kms": "120,000"
+    },
+    {
+        "number": 987897,
+        "maker": "Fiat",
+        "name": "500",
+        "image": "https://www.auto1.co.il/carmodelbank/5001.jpg",
+        "size": 1,
+        "gear": "auto",
+        "year": "2018",
+        "price": 135.20,
+        "kms": "47,000"
+    },
+    {
+        "number": 872694,
+        "maker": "Chevrolet",
+        "name": "Spark",
+        "image": "https://www.auto1.co.il/carmodelbank/spark1.jpg",
+        "size": 1,
+        "gear": "manual",
+        "year": "2016",
+        "price": 158.40,
+        "kms": "86,140"
+    },
+    {
+        "number": 574126,
+        "maker": "Fiat",
+        "name": "Fiorino",
+        "image": "https://www.auto1.co.il/carmodelbank/fiorino1.jpg",
+        "size": 3,
+        "year": "2018",
+        "gear": "manual",
+        "price": 429.50,
+        "kms": "160,000"
+    },
+    {
+        "number": 148973,
+        "maker": "Hyundai",
+        "name": "I800",
+        "image": "https://www.auto1.co.il/carmodelbank/i800.jpg",
+        "size": 3,
+        "gear": "manual",
+        "year": "2015",
+        "price": 680.70,
+        "kms": "57,300"
+    },
+    {
+        "number": 263574,
+        "maker": "Peugeot",
+        "name": "Boxer",
+        "image": "https://www.auto1.co.il/carmodelbank/peugeot-boxer1.jpg",
+        "size": 3,
+        "gear": "auto",
+        "year": "2019",
+        "price": 560.30,
+        "kms": "100,750"
+    },
+    {
+        "number": 439852,
+        "maker": "Jaguar",
+        "name": "XF",
+        "image": "https://www.auto1.co.il/carmodelbank/xf1.jpg",
+        "size": 2,
+        "gear": "auto",
+        "year": "2020",
+        "price": 1040.00,
+        "kms": "10,000"
+    }
+]

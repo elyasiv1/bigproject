@@ -1,0 +1,108 @@
+body{
+  margin: auto;
+  direction: rtl;
+  background-color: cadetblue;
+}
+
+header{
+  height: 40px;
+  width: 100%;
+  background-image: url(https://images.all-free-download.com/images/graphicthumb/hertz_logo2_29247.jpg);
+  background-size: contain;
+  border-bottom: solid;
+  border-color: black;
+
+}
+.link{ text-decoration: none;
+background-color: blue;
+padding: 5px;
+border-radius: 10%;
+color: white;
+height: 25px;
+}
+.linkToRent {
+  margin-right: auto;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 60px;
+  background-color: red;
+  padding: 5px;
+  border-radius: 10%;
+  color: white;
+  height: 25px;
+  cursor: pointer;
+}
+.homePageImag{
+  height: 400px;
+  background-image: url(https://res.cloudinary.com/exite/image/upload/f_auto/exitetogo/www.drivedreamtravel.com/gallery/sitepics/8E9D4F36-4036-596B-771B-1716E7F8B10B.jpg);
+  background-size: cover;
+  text-align: center;
+ 
+}
+section{
+  padding: 5px;
+
+}
+.formDiv{
+  margin-left: 3%;
+  margin-right: 10%;
+}
+
+form{
+  background-color: white;
+  width: 155px;
+  border: 1px solid black;
+}
+label{
+  font-weight: bold;
+}
+.order{
+  background-color: white;
+  width: 184px;
+  border: 3px solid black;
+  margin: auto;
+
+}
+.order.submit{
+  border-radius: 10%;
+}
+.formPayment{
+ 
+    background-color: white;
+    width: 184px;
+    border: none;
+    margin: auto;
+
+}
+.CarLoist{
+  width:  calc(100% - 157px);
+  height: 200px;
+  border: 1px solid black;
+
+}
+.carImg{
+  max-width: 100%;
+
+}
+.imgDiv {
+  height: 100%;
+  align-items: center;
+  width: 47%;
+}
+
+.carName{
+  display: flex;
+}
+.carAvelobol{display: flex;
+  background-color: white;
+  width: 500px;
+  margin: 5px;
+  border-radius: 4%;
+  border: solid black 4px;
+}
+.leasePage{
+  display: flex;
+}
+h4{
+  color: blueviolet;
+}

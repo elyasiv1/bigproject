@@ -7,8 +7,6 @@ export default function CarAvelobol(props) {
         {props.Cars.map(car => {
 
 
-            // console.log(props.filters);
-            // console.log(car);
 
             let carPresentation = <div className='carAvelobol' key={car.number}>
                 {<div className='imgDiv'>

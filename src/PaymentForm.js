@@ -29,14 +29,14 @@ export default function PaymenyForm(props) {
 
                 <label>טלפון</label>
                 <br />
-                <input type='number' placeholder='טלפון שלך' name='pone' onChange={props.inputChange} />
+                <input  type='number'   placeholder='טלפון שלך' name='pone' onChange={props.inputChange} />
                 <br />
             </section>
 
             <section>
                 <label>גיל</label>
                 <br />
-                <input type='number' placeholder='הגיל שלך' name='age' onChange={props.inputChange} />
+                <input type='number'  placeholder='הגיל שלך' name='age' onChange={props.inputChange} />
                 <br />
             </section>
 

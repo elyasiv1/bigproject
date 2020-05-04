@@ -6,6 +6,7 @@ import Home from './Home'
 import Lease from './Lease'
 import Payment from './Payment'
 import Done from './done'
+import ReturnCar from './ReturnCar'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Haeder/>
       <Switch>
         <Route path='/' exact component={Home}/>
+        <Route path='/ReturnCar' exact component={ReturnCar}/>
         <Route path='/lease'exact component={Lease}/>
         <Route path='/Payment'  component={Payment} />
         <Route path='/Done'  component={Done} />

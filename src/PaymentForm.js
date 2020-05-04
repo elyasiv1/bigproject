@@ -1,14 +1,11 @@
 import React from 'react'
-import Calendar from 'react-calendar'
 
 
 export default function PaymenyForm(props) {
-
-
+    
     return <div className="PaymenyForm">
         <h2> השכרת רכב</h2>
-
-        <form className="formPayment">
+        <form className="formPayment" onChange={props.onChange}>
             <section>
                 <label>שם פרטי</label>
                 <br />
@@ -18,6 +15,13 @@ export default function PaymenyForm(props) {
                 <br />
                 <input name="userLastName" type='text' placeholder='שם משפחה'></input> </section> <br />
 
+            <section>
+
+                <label>מספר זהות</label>
+                <br />
+                <input type='Number' placeholder='מספר זהות' name='id' onChange={props.inputChange} />
+                <br />
+            </section>
             <section>
                 <label>דוא"ל</label>
                 <br />
@@ -29,14 +33,14 @@ export default function PaymenyForm(props) {
 
                 <label>טלפון</label>
                 <br />
-                <input  type='number'   placeholder='טלפון שלך' name='pone' onChange={props.inputChange} />
+                <input type='Number' placeholder='טלפון שלך' name='pone' onChange={props.inputChange} />
                 <br />
             </section>
 
             <section>
                 <label>גיל</label>
                 <br />
-                <input type='number'  placeholder='הגיל שלך' name='age' onChange={props.inputChange} />
+                <input type='number' placeholder='הגיל שלך' name='age' onChange={props.inputChange} />
                 <br />
             </section>
 

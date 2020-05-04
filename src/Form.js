@@ -1,6 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import Cars from './imports/cars'
+
 
 
 export default function CarLeas(props) {
@@ -10,9 +9,10 @@ export default function CarLeas(props) {
         <h2> השכרת רכב</h2>
         <aside className='filters'>
             <form>
-                <section><label>מתאריך:</label> <br /> <input name='startDate' onChange={props.addChange} type='date' />
+             
+                <section><label>מתאריך:</label> <br /> <input name='from' onChange={(e) => { props.addChange(e); props.numberOfDays(e) }} type='date' />
                 </section>
-                <section><label>עד:</label> <br /> <input name='endDate' onChange={props.addChange} type='date' />
+                <section><label>עד:</label> <br /> <input name='to' onChange={(e) => { props.addChange(e); props.numberOfDays(e) }} type='date' />
                 </section>
                 <section>
                     <label>סוג הרכב:</label><br />

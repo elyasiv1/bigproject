@@ -3,7 +3,7 @@ import{Link}from 'react-router-dom'
 
 function Haeder() {
     return (
-     <Link to= '/'  className='link' ><header></header></Link>
+     <Link to= '/'  className='hederLink' ><header></header></Link>
     );
   }
   

@@ -30,8 +30,8 @@ export default function Lease() {
     const [ReturnCarData, setReturnCarData] = React.useState({
         userName: false,
         userLastName: false,
-        carNumber: false,
-        id: false,
+        carNumber:null,
+        id: null,
         returnACar: false,
         date: new Date()
     })
@@ -45,33 +45,55 @@ export default function Lease() {
         const { type, name, checked, value } = e.target
         const v = type === 'checkbox' ? checked : value
 
+
         const newPaymentData = { ...paymentData, [name]: v }
 
         setPaymentData(newPaymentData)
 
+
         const customersRent = JSON.parse(localStorage.rented || null) || []
 
         const index = customersRent.findIndex(c => c.carNumber === selectedCar.car.number)
-        if (ReturnCarData.returnACar === true) {
-            if (index === -1)
-            alert("try agen")
-            else if (index !== -1)
-            //     customersRent.pop({ carNumber:  ReturnCarData.carNumber, ...newPaymentData })
-            // else
-                customersRent[index].pop( { carNumber:  ReturnCarData.carNumber, ...newPaymentData })
-            localStorage.rented = JSON.stringify(customersRent)
-
-        }
-        if (ReturnCarData.returnACar === false){
-             if (index === -1)
+        if (index === -1)
             customersRent.push({ carNumber: selectedCar.car.number, ...newPaymentData })
         else
             customersRent[index] = { carNumber: selectedCar.car.number, ...newPaymentData }
-        localStorage.rented = JSON.stringify(customersRent) 
-        }
-      
+        localStorage.rented = JSON.stringify(customersRent)
+
 
     }
+
+
+
+    function inputReturn(e) {
+        const { type, name, checked, value } = e.target
+        const v = type === 'checkbox' ? checked : value
+
+
+
+        setReturnCarData({ ...ReturnCarData, [name]: v });
+        console.log(ReturnCarData)
+
+    }
+    function deleteFromLocal() {
+        const customersReturn = JSON.parse(localStorage.rented || null) || []
+        const index = customersReturn.findIndex(c => c.carNumber === ReturnCarData.carNumber)
+        // if (index === -1){
+        //     return alert("try agen")
+        // }
+
+        // else if (index !== -1)
+        customersReturn.pop({ carNumber: ReturnCarData.carNumber })
+        // else
+        customersReturn[index] = ({ carNumber: ReturnCarData.carNumber })
+        localStorage.rented = JSON.stringify(customersReturn)
+
+    }
+
+
+
+
+
 
     function onSelectACar(car) {
         // console.log(car);
@@ -94,33 +116,6 @@ export default function Lease() {
 
     }
 
-    function inputReturn(e) {
-        const { type, name, checked, value } = e.target
-        const v = type === 'checkbox' ? checked : value
-
-        const newReturnCarData = { ...ReturnCarData, [name]: v }
-
-        setReturnCarData(newReturnCarData)
-    }
-    //     const customersReturn = JSON.parse(localStorage.rented || null) || []
-
-    //     const index = customersReturn.findIndex(c => c.carNumber === ReturnCarData.carNumber)
-
-    //     if (index === -1)
-    //         alert("try agen")
-    //     else
-    //         //פה השגיאה אין פה סלקטד כאר
-    //         customersReturn.push({ carNumber: ReturnCarData.carNumber, ...newReturnCarData })
-    //     customersReturn[index] = { carNumber: ReturnCarData.carNumber, ...newReturnCarData }
-
-    //     if (index !== -1)
-    //         customersRent.pop({ carNumber: ReturnCarData.carNumber, ...newPaymentData })
-    //     else
-    //         customersRent[index] = customersRent[index].pop({ carNumber: ReturnCarData.carNumber, ...newPaymentData })
-    //     localStorage.rented = JSON.stringify(customersRent)
-    //     localStorage.rentedReturn = JSON.stringify(customersReturn)
-
-    // }
     function onReturnCar() {
         setReturnCarData({ ...ReturnCarData, returnACar: true })
 
@@ -128,7 +123,7 @@ export default function Lease() {
 
 
     if (ReturnCarData.returnACar === true)
-        return <ReturnCar inputReturn={inputReturn} />
+        return <ReturnCar inputReturn={inputReturn} deleteFromLocal={deleteFromLocal} />
 
 
     else if (selectedCar.purchase === true)

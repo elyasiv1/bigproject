@@ -24,30 +24,15 @@ export default function Payment(props) {
         </div>
 
         <div className='order'>
-            <PaymentForm onChange={props.inputChange}/>
+            <PaymentForm inputChange={props.inputChange} />
             <Link to='/Done' className='linkToRent'>הזמן</Link>
+
+            {/* <button className="linkToRent" onClick={() => { props.onSelectACar(props.car) }} > בצע רכישה</button> */}
+            {/* <Link to='/Done' className='linkToRent' onClick={ props.onSelectACar(car) }>{Math.round(car.price*props.numberOfDays())}ש"ח הזמן</Link> */}
         </div>
 
 
     </div>
 
 
-}    // const [order, setOrder ] = React.useState ({
-
-    // })
-
-
-
-    // function  inputChange (e) {
-    //     const { type, name, checked, value } = e.target
-    //     const v = type === 'checkbox' ? checked : value
-
-    //     setOrder({ ...order, [name]: v })
-
-    // }
-    // function inputChangeCheck(e) {
-    //     const { name, value } = e.target
-    //     this.setState({
-    //         [name]: value
-    //     })
-    // }
+} 
